@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accounting</title>
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #2b2b2b;
+    background: #fdfcf9;
+  }
+  h1 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.8em;
+    border-bottom: 2px solid #4a5d4a;
+    padding-bottom: 8px;
+  }
+  h2 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.2em;
+    color: #4a5d4a;
+    margin-top: 2em;
+  }
+  p {
+    margin: 1em 0;
+  }
+  .note {
+    background: #f1f4ef;
+    border-left: 4px solid #6f8f6f;
+    padding: 10px 16px;
+    margin: 1.5em 0;
+    font-style: italic;
+    color: #33422f;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  figure {
+    margin: 1.5em 0;
+    width: 100%;
+    text-align: center;
+  }
+  figcaption {
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Accounting</h1>
+
+<figure>
+  <img src="LetsAccount.jpg" alt="Let's Account">
+</figure>
+
+<p>The other day my accountant asked for financial records. That surprises me every year. And I scramble. Not that I don't have the records. I do. In about 30+ different places.</p>
+
+<p>Bank is easy. Put in fiscal year and download all records in one csv file. Not sure why the accountant still wants the pdf for bank statements. csv is so much easier.</p>
+
+<p>For expenses there are the credit card statements (csv). Unfortunately they only allow the last 4 months.</p>
+
+<p>Most of my credit card purchases and subscriptions also have email records. Time for Claude Cowork. So I let Cowork loose on my billing folder. Create one record for each email.4 columns: Company, service, date and amount.</p>
+
+<figure>
+  <img src="ClaudeCoworkExpenses.jpg" alt="Claude Cowork Expenses">
+</figure>
+
+<p>So I get the file. Very nice. 3 different currencies: CAD, USD, EURO. Not so good. (You probably don't have the currency issue in the US 😊) Some invoices do not have the currency, which makes them either CAD or USD. Claude guessed right. We add a conversion factor and I have my expense file with most of my business expenses and a few personal ones that I can easily filter out.</p>
+
+<div class="note">
+NB: When I prompted various LLMs for an accounting banner, they all showed mountains of paper. A little outdated? Isn't everybody softcopy?
+</div>
+
+</body>
+</html>
